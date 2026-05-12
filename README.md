@@ -467,13 +467,11 @@ The [Logs Explorer](https://antithesis.com/docs/logs_explorer/) allows us to sea
 
 This bug is planted intentionally, and we understand how it manifests.
 
-Run the following search over assertions:
+With Antithesis access, you can run the following search over assertions:
 
  > `message` > `contains` > `Invalid echo response`
 
 ![Bug #1 - Search](.readme/bug-1-search.png)
-
-⚠️ **Note:** Hitting Enter seems to clear the search field — in reality it adds a newline. Use Ctrl+Enter to search instead, or click the search button.
 
 A list of examples will start rolling in.
 
@@ -484,11 +482,11 @@ That's because the system was under test for the equivalent of 24 hours, compres
 
 ![Bug #1 - List View](.readme/bug-1-list.png)
 
-Now switch to **Map** view to see the search results plotted over different timelines.
+If we switch to **Map** view, we can see the search results plotted over different timelines.
 
 ![Bug #1 - Map View](.readme/bug-1-map.png)
 
-Click on any of the blue dots to load the logs for that timeline up to that moment.
+When we click on any of the blue dots, we can load the logs for that timeline up to that moment.
 
 This bug is pretty cheeky.  To fix it, we would just need to delete
 the 4 lines of code that introduce it (in the `process_echo_request`
