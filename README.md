@@ -280,8 +280,8 @@ It is often a good idea to observe the system and the workload from an outside p
 # Part 3 - First Antithesis test run
 
 Now, let's observe what happens when we run the same system in
-Antithesis. Here is a link to a report produced from a 30-minute test
-run: https://public.antithesis.com/report/TkY1zmjdGkicsYUS5JAaJGDP/mY8lMDnKzj765o26nvgXf3UaI9aIbRz0ehk5pv1BNfo.html
+Antithesis. Here is a link to a report produced from a 30-minute test run: 
+https://public.antithesis.com/report/TkY1zmjdGkicsYUS5JAaJGDP/mY8lMDnKzj765o26nvgXf3UaI9aIbRz0ehk5pv1BNfo.html
 
 Let's look at the main sections.
 
@@ -308,15 +308,6 @@ ignore this for now.
 Feel free to explore the passing properties.
 
 When you're ready to hunt for bugs, switch the filter to `Failed` and expand all properties that require attention.
-
-#### `Symbols were uploaded`
-This is expected, as Python instrumentation is not yet supported in Antithesis.
-
-#### `Software was instrumented`
-This is expected, as Python instrumentation is not yet supported in Antithesis.
-
-#### `Thread pausing was enabled`
-This is expected, as Python instrumentation is not yet supported in Antithesis. (Thread pausing is a fault enabled by Antithesis instrumentation.)
 
 #### `Invalid echo response`
 
@@ -654,8 +645,8 @@ connection and read seems appropriate
 # Part 6 - Second Test Run
 
 After making these changes, a second report of the same length should
-come back green (except for Python coverage properties, which we can
-ignore): https://public.antithesis.com/report/Gq9IIsxCu_Px0TmheaecN-CV/s1lkJhqQe_dEDfiyZbIjlggYX3qiZLZz8cgVzWllnXM.html
+come back with some issues resolved:
+https://public.antithesis.com/report/Gq9IIsxCu_Px0TmheaecN-CV/s1lkJhqQe_dEDfiyZbIjlggYX3qiZLZz8cgVzWllnXM.html
 
 # Conclusion
 
