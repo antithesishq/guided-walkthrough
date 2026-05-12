@@ -459,7 +459,8 @@ So far we have confirmed that the property failures in the report are genuine pr
 
 Now let's investigate, find the bugs and see how we might fix them!
 
-Once you're ready, hit the `Explore logs` button at the top of the report. This will take you to the **Logs Explorer**.
+With full Antithesis access, you would click the `Explore logs` button at the top of the report to take you to the **Logs Explorer**.
+Since this feature requires authentication, we've provided screenshots below.
 
 The [Logs Explorer](https://antithesis.com/docs/logs_explorer/) allows us to search for log messages and events (like property failures) across all the branches of the [multiverse](https://antithesis.com/docs/multiverse_debugging/moment_branch/) explored by Antithesis in this run.
 
@@ -467,7 +468,7 @@ The [Logs Explorer](https://antithesis.com/docs/logs_explorer/) allows us to sea
 
 This bug is planted intentionally, and we understand how it manifests.
 
-With Antithesis access, you can run the following search over assertions:
+You can run the following search over assertions:
 
  > `message` > `contains` > `Invalid echo response`
 
